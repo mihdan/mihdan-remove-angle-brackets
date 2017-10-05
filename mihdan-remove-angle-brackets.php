@@ -7,7 +7,11 @@
  * Author: Sergey Biryukov
  * Author URI: http://sergeybiryukov.ru/
  */
- 
+
+/**
+ * Удаляет треугольные скобки < и > из
+ * письма восстановления пароля
+ */
 function remove_angle_brackets( $message ) {
     return preg_replace( '#<(https?:\/\/)([^>]+)>#', '$1$2', $message );
 }
